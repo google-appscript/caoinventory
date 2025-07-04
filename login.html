@@ -33,7 +33,6 @@
       .then(res => res.json())
       .then(res => {
         if (res.success) {
-          alert(`Welcome, ${res.name}`);
           window.location.href = "main.html"; // or wherever your dashboard is
         } else {
           document.getElementById("msg").textContent = res.message;
