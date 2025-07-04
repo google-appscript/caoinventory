@@ -19,7 +19,7 @@ function registerUser(data) {
 
   sheet.appendRow([
     new Date(),
-    data.fullName,
+    data.name,
     data.username,
     data.password,
     data.role || "user",
