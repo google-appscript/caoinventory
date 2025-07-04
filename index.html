@@ -29,6 +29,19 @@
       position: relative;
       z-index: 1;
     }
+
+    /* Custom transparent green-bordered button */
+    .btn-custom {
+      background-color: transparent;
+      border: 2px solid #28a745; /* Bootstrap green */
+      color: #28a745;
+      transition: all 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: #28a745;
+      color: white;
+    }
   </style>
 </head>
 
@@ -40,10 +53,10 @@
     Your browser does not support the video tag.
   </video>
 
-  <!-- Centered Button -->
+  <!-- Centered Transparent Button with Green Border -->
   <div class="d-flex justify-content-center align-items-center vh-100 overlay-content">
     <a href="https://script.google.com/macros/s/AKfycbxRTgOKiFwf2OwwgzVgEAyCJVQWG-7tPHRgTRZrdeOiLTfMIGX5oymUhlp1CdmsnCjrrg/exec" 
-       class="btn btn-success btn-lg">
+       class="btn btn-custom btn-lg">
        Open Inventory System
     </a>
   </div>
